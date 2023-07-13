@@ -1,0 +1,44 @@
+/* BASE STYLES */
+:root {
+    --clr-drk: #0E0301;
+    --clr-lght: #F8F2F0;
+    --clr--ascnt: #16AA09;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--clr-drk);
+    background-color: var(--clr-lght);
+    font-weight: bold;
+}
+
+.container {
+    border: 10px solid black;
+    height: 500px;
+    width: 500px;
+    padding: 1em;
+}
+
+.item {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: var(--clr--ascnt);
+    text-align: center;
+}
+
+/*Flex Box*/
+
+.container {
+    display: flex;
+}
+
+.item-1 {
+    flex-shrink: 5;
+    flex-basis: 150px;
+    align-self: center;
+}
